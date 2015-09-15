@@ -1,0 +1,9 @@
+{
+  "name": "rmapi",
+  "version": "0.0.8",
+  "description": "A very simple json API w nodejs",
+  "main": "index.js",
+  "scripts": {},
+  "author": "rmayne",
+  "license": "MIT"
+}

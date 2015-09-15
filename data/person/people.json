@@ -1,0 +1,38 @@
+[
+	{
+		"id" : 1,
+		"firstname" : "Bill",
+		"lastname" : "Donahue",
+		"description" : "A really nice guy."
+	},
+	{
+		"id" : 2,
+		"firstname" : "Jon",
+		"lastname" : "Donahue",
+		"description" : "A really nice guy."
+	},
+	{
+		"id" : 3,
+		"firstname" : "Bill",
+		"lastname" : "Boyd",
+		"description" : "A really nice guy."
+	},
+	{
+		"id" : 4,
+		"firstname" : "Bobby",
+		"lastname" : "Jenkins",
+		"description" : "A really nice guy."
+	},
+	{
+		"id" : 5,
+		"firstname" : "Jon Bob",
+		"lastname" : "PhpUnit",
+		"description" : "A really nice guy."
+	},
+	{
+		"id" : 6,
+		"firstname" : "Willy",
+		"lastname" : "Rae",
+		"description" : "A really nice guy."
+	}
+]
