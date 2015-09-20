@@ -6,16 +6,19 @@ var server = http.createServer(function(req, res){
 
 	if (/^\/api\/person$/.test(req.url)){
 		responseBody = fs.createReadStream('data/person/people.json')
-	} else if (/^\/api\/person\/[0-9]+/) {
+	} else if (/^\/api\/person\/[0-9]+/.test(req.url)) {
 		id = req.url.match(/[0-9]+$/)
 		responseBody = fs.createReadStream('data/person/' + id + '.json')
 	}
 
 	if(responseBody){
-	    res.writeHead(200, { 'Content-Type': 'application/json' })
+		// CORS header included
+	    res.writeHead(200, {'Access-Control-Allow-Origin' : '*', 'Content-Type': 'application/json'
+	    	})
+
 	    responseBody.pipe(res)
 	} else {
-	    res.writeHead(404)
+	    res.writeHead(404, {'Access-Control-Allow-Origin' : '*'})
 	    res.end('404')
 	}
 })
